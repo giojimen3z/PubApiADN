@@ -1,0 +1,11 @@
+CREATE SCHEMA `BeersTst` ;
+
+CREATE TABLE `beer` (
+  `id` INT NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `brewery` VARCHAR(45) NULL,
+  `country` VARCHAR(45) NULL,
+  `price` DOUBLE NULL,
+  `CURRENCY` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
