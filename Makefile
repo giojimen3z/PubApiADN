@@ -37,20 +37,10 @@ dep-ensure:
 	export GO111MODULE=on; \
 	go mod tidy
 
-run-reader:
+run-main:
 	@echo "==> Running local reader command..."
-	export SCOPE=reader; \
-	cd cmd/app/ && go run main.go
+	cd cmd/api/ && go run main.go
 
-run-writer:
-	@echo "==> Running local writer command..."
-	export SCOPE=writer; \
-	cd cmd/app/ && go run main.go
-
-run-worker:
-	@echo "==> Running local worker command..."
-	export SCOPE=worker; \
-	cd cmd/app/ && go run main.go
 
 start-db:
 	@echo "==> Starting database..."

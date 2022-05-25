@@ -9,7 +9,7 @@ import (
 
 type CauseList []interface{}
 
-type  ApiError interface {
+type ApiError interface {
 	Message() string
 	Code() string
 	Status() int
